@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Timezone Converter</title>
+    <!-- Correct way to load CSS & JS via Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>⏰ Timezone Log Converter</h2>
+
+        <textarea id="logInput" placeholder="Paste UTC logs here (e.g., 2025-08-27 15:16:34)..."></textarea>
+
+        <label for="timezone">Select Target Timezone:</label>
+        <select id="timezone">
+            <option value="Asia/Kolkata">Asia/Kolkata (IST)</option>
+            <option value="Asia/Karachi">Asia/Karachi (PKT)</option>
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">America/New_York (EST)</option>
+            <option value="Europe/London">Europe/London (GMT)</option>
+        </select>
+
+        <button onclick="convertLogs()">Convert Logs</button>
+
+        <h3>Converted Logs:</h3>
+        <pre id="output"></pre>
+    </div>
+</body>
+</html>
