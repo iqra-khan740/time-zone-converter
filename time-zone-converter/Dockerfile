@@ -18,8 +18,9 @@ COPY Backend/requirements.txt /app/
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 
-# Copy backend & frontend
-COPY time-zone-converter/ /app/
+# Copy everything (Backend + frontend + Procfile)
+COPY . /app/
+
 
 # Expose port (platforms like Railway/Cloud Run set $PORT)
 EXPOSE 8080
