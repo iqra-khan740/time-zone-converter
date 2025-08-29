@@ -84,3 +84,8 @@ timezones available in the project.
         http://localhost:8080
 
 ------------------------------------------------------------------------
+## You can check it out using the following railway link:
+
+   ``` sh
+   https://web-production-c0345c.up.railway.app/
+   ```
