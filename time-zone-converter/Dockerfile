@@ -27,4 +27,6 @@ EXPOSE 8080
 
 # Run with Gunicorn in production
 # ${PORT:-8080} means: use env $PORT if exists, else default 8080
-CMD ["sh", "-c", "gunicorn -b 0.0.0.0:${PORT:-8080} Backend.app:app"]
+#CMD ["sh", "-c", "gunicorn -b 0.0.0.0:${PORT:-8080} Backend.app:app"]
+CMD gunicorn -b 0.0.0.0:${PORT:-8080} Backend.app:app
+
