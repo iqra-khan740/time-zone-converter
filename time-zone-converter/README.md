@@ -8,7 +8,7 @@ timezones available in the project.
 ## 🚀 Features
 
 -   Paste logs in ``YYYY-MM-DD HH:MM:SS`` UTC format.
--   Select target timezone (e.g., Asia/Karachi, Europe/London) from dropdown menu.
+-   Select target timezone (e.g., Asia/Karachi, Europe/London) from the dropdown menu.
 -   Convert instantly with Flask backend.
 -   Responsive frontend with modern dark theme.
 
@@ -59,9 +59,10 @@ timezones available in the project.
     ```
 
 4.  Open browser:
-
-        http://127.0.0.1:5000
-
+   
+    ``` sh
+    provided by your terminal
+    ```
 ------------------------------------------------------------------------
 
 ## 🐳 Run with Docker
